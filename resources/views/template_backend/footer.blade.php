@@ -21,6 +21,7 @@
 <script src="{{ asset('public/../assets/libs/jquery/dist/jquery.min.js') }}"></script>
 <script src="{{ asset('public/../assets/libs/popper.js/dist/umd/popper.min.js') }}"></script>
 <script src="{{ asset('public/../assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
 <!-- apps -->
 <!-- apps -->
 <script src="{{ asset('public/../dist/js/app-style-switcher.js') }}"></script>
@@ -43,5 +44,11 @@
 <script>
     $(document).ready(function() {
         $('#table1').DataTable()
-    })
+    });
     </script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.tags').select2();
+    });
+</script>
